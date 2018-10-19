@@ -57,7 +57,7 @@
         James "Swedish Delight" Liu is in the voting stage of Smash Summit 7. In 2015, Swedish was ranked #31 in the global rankings before attending the very first Smash Summit as a vote-in competitor. This experience was crucial to his improvement to #11 on the 2016 rankings and #16 on the 2017 rankings. His goal is to finish 2018 in the top 10, and another Summit experience would be critical to making that happen.
     </p>
     <div class="w3-container w3-padding-16">
-        <a href="http://www.twitlonger.com/show/n_1sqmjv1" class="w3-button w3-black">Swedish Delight's post on voting incentives and his own reasons for campaigning to enter this tournament</a>
+        <a href="http://www.twitlonger.com/show/n_1sqmjv1" class="w3-button w3-black" style="width:15%">Voting Incentives <br>& personal statement<br>from Swedish</a>
     </div>
     <div style="padding-top:56.25%;background-color: yellow;position:relative;height:0;overflow:hidden">
         <iframe src="https://www.youtube.com/embed/8ahoNX5qr2Q" frameborder="0" allowfullscreen
@@ -71,7 +71,13 @@
   </div>
   <!-- Display the countdown timer in an element -->
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
+//var url = "http://anyorigin.com/go?url=" + encodeURIComponent("https://smash.gg/tournament/smash-summit-7/voting");
+$.getJSON('http://www.whateverorigin.org/get?url=' + encodeURIComponent('http://anyorigin.com/go?url=" + encodeURIComponent("https://smash.gg/tournament/smash-summit-7/voting') + '&callback=?', function(data){
+    console.log(data.contents);
+});
+
 // Set the date we're counting down to
 var countDownDate = new Date("Oct 20, 2018 14:00:00 PDT").getTime();
 
